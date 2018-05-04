@@ -1,0 +1,35 @@
+.zoom {
+  position: relative;
+  transition: transform .2s;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+}
+
+.fadeIn {
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-delay: 1s;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

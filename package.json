@@ -1,0 +1,22 @@
+{
+  "name": "codeexercise",
+  "version": "1.0.0",
+  "description": "code exercise for Digitas",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcmd"
+  },
+  "author": "Brynn Arego",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-sass": "^4.0.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1"
+  }
+  "repository" :
+  { "type" : "git"
+  , "url" : "git@github.com:barego/reddit-aww-api-code-exercise.git"
+  }
+}

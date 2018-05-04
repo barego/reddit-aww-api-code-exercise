@@ -1,0 +1,110 @@
+$keyBreakpoint: 37.5em;
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  @media(min-width: $keyBreakpoint){
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.card {
+
+  $radius: 5px;
+
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  background: $color-plain-white;
+  border: solid 1px #ccc;
+  border-radius: $radius;
+  overflow: hidden;
+
+  @media(min-width: $keyBreakpoint){
+    width: 32%;
+  }
+
+  @media(min-width: $keyBreakpoint + 33){
+    width: 24%;
+  }
+
+  .inner-wrap {
+    display: flex;
+    padding: 1.5em;
+
+    p:last-of-type { margin-bottom: 0; }
+  }
+
+  .title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 1em;
+    display: block;
+
+    a {
+      color: $color-turquoise-blue;
+      text-decoration: none;
+      &:hover, &:focus {
+        color: darken($color-turquoise-blue, 15%);
+        text-decoration: none;
+      }
+    }
+  }
+
+  p {
+    font-size: .7em;
+    color: $color-medium-grey;
+    line-height: 1.2;
+  }
+
+  .thumbnail {
+    max-width: 80px;
+    margin-right: 15px;
+    border-radius: 80px;
+    border: solid 2px $color-turquoise-blue;
+    transition: ease all .2s;
+  }
+
+  &:hover {
+    .thumbnail {
+      max-width: 130px;
+      border: solid 4px $color-plain-black;
+    }
+  }
+
+  .action-bar {
+    padding: 0 1em;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+    }
+    li {
+      list-style: none;
+      font-size: .7em;
+
+      a {
+        display: block;
+        padding: 1em 0;
+        color: $color-dark-grey;
+        text-decoration: none;
+
+        &:hover, &:focus {
+          color: $color-plain-black;
+        }
+      }
+
+      &.comments .comments-link {
+        font-weight: bold;
+      }
+    }
+  }
+
+}

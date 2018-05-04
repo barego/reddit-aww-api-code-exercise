@@ -1,0 +1,27 @@
+@import 'theme/colors';
+@import 'theme/typography';
+@import 'theme/animation';
+@import 'components/grid-cards';
+
+/* Global Styles */
+
+html { box-sizing: border-box; }
+*,:before, :after { box-sizing: inherit; }
+
+body {
+  margin: 1em;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/greyzz.png");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+}
