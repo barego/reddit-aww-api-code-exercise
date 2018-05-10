@@ -1,22 +1,25 @@
 {
-  "name": "codeexercise",
+  "name": "Card Layout with Reddit API",
   "version": "1.0.0",
-  "description": "code exercise for Digitas",
-  "main": "index.js",
+  "description": "Card Layout with Reddit API",
+  "main": "index.html",
   "scripts": {
-    "test": "testcmd"
-  },
-  "author": "Brynn Arego",
-  "license": "ISC",
-  "devDependencies": {
-    "gulp-sass": "^4.0.1"
+    "start": "gulp sass"
   },
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1"
-  }
-  "repository" :
-  { "type" : "git"
-  , "url" : "git@github.com:barego/reddit-aww-api-code-exercise.git"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/barego/reddit-aww-api-code-exercise"
+  },
+  "keywords": [
+    "node",
+    "gulp",
+    "sass"
+  ],
+  "author": "Brynn Arego",
+
+  "license": "MIT"
 }
