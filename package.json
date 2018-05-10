@@ -10,9 +10,9 @@
     "gulp": "^3.9.1",
     "gulp-cli": "^2.0.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/barego/reddit-aww-api-code-exercise"
+  "repository" :
+  { "type" : "git"
+  , "url" : "git@github.com:barego/reddit-aww-api-code-exercise.git"
   },
   "keywords": [
     "node",
