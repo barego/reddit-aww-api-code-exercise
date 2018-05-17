@@ -4,8 +4,8 @@
   "description": "a card layout using the reddit API",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp-cli": "^2.0.1",
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1"
   },
   "devDependencies": {},
   "scripts": {
