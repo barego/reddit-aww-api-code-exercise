@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+body {
+  font-family: 'PT Sans', sans-serif; }
+
+.main-header {
+  display: block;
+  text-align: center;
+  margin-bottom: 1em; }
+  .main-header .line-1 {
+    font-family: Pacifico;
+    position: relative;
+    display: block; }
+    .main-header .line-1:before, .main-header .line-1:after {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: relative;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      font-size: 16px;
+      margin: -0 30px;
+      top: -5px; }
+  .main-header .line-2 {
+    display: block;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90px;
+    letter-spacing: 15px;
+    margin: 0 0; }
+  .main-header .line-3 {
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    position: relative;
+    letter-spacing: 6px; }
+    .main-header .line-3:before, .main-header .line-3:after {
+      content: " ";
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      border-top: 1px solid #222;
+      border-bottom: 1px solid #222; }
+    .main-header .line-3:before {
+      margin: 7px 0 0 -60px; }
+    .main-header .line-3:after {
+      margin: 7px 0 0 5px; }
+  .main-header .line-4 {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    margin: 50px 0 0; }
+  .main-header .line-5 {
+    display: block;
+    margin: 20px 0 50px;
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    display: block;
+    font-size: 20px; }
+    .main-header .line-5 a {
+      text-decoration: none;
+      display: inline-block;
+      text-align: left;
+      color: #222; }
+    .main-header .line-5:nth-child(1) {
+      text-align: right; }
+      .main-header .line-5:nth-child(1):after {
+        content: "\f005 ";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        width: 90%;
+        top: 4px;
+        margin: 0;
+        padding: 0 20px; }
+  .main-header .line-6 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px; }
+    .main-header .line-6:before, .main-header .line-6:after {
+      content: "\f068";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      position: relative;
+      font-size: 16px;
+      margin: 0 10px;
+      top: 2px; }
+
+.zoom {
+  position: relative;
+  transition: transform .2s; }
+  .zoom:hover {
+    transform: scale(1.2);
+    z-index: 1; }
+
+.fadeIn {
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  transform-origin: bottom center;
+  animation-name: fadeIn;
+  animation-duration: 300ms;
+  animation-delay: 1s; }
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+  @media (min-width: 37.5em) {
+    .cards {
+      flex-direction: row;
+      justify-content: space-between; } }
+
+.card {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1em;
+  background: #FFFFFF;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  overflow: hidden; }
+  @media (min-width: 37.5em) {
+    .card {
+      width: 32%; } }
+  @media (min-width: 70.5em) {
+    .card {
+      width: 24%; } }
+  .card .inner-wrap {
+    display: flex;
+    padding: 1.5em; }
+    .card .inner-wrap p:last-of-type {
+      margin-bottom: 0; }
+  .card .title {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 1em;
+    display: block; }
+    .card .title a {
+      color: #2A91E7;
+      text-decoration: none; }
+      .card .title a:hover, .card .title a:focus {
+        color: #1469b1;
+        text-decoration: none; }
+  .card p {
+    font-size: .7em;
+    color: #777777;
+    line-height: 1.2; }
+  .card .thumbnail {
+    max-width: 80px;
+    margin-right: 15px;
+    border-radius: 80px;
+    border: solid 2px #2A91E7;
+    transition: ease all .2s; }
+  .card:hover .thumbnail {
+    max-width: 130px;
+    border: solid 4px #000; }
+  .card .action-bar {
+    padding: 0 1em; }
+    .card .action-bar ul {
+      display: flex;
+      justify-content: space-between;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      position: relative;
+      overflow: hidden; }
+    .card .action-bar li {
+      list-style: none;
+      font-size: .7em; }
+      .card .action-bar li a {
+        display: block;
+        padding: 1em 0;
+        color: #666666;
+        text-decoration: none; }
+        .card .action-bar li a:hover, .card .action-bar li a:focus {
+          color: #000; }
+      .card .action-bar li.comments .comments-link {
+        font-weight: bold; }
+
+/* Global Styles */
+html {
+  box-sizing: border-box; }
+
+*, :before, :after {
+  box-sizing: inherit; }
+
+body {
+  margin: 1em;
+  background: url("https://www.toptal.com/designers/subtlepatterns/patterns/greyzz.png");
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
+ul, ol {
+  margin: 0;
+  padding: 0; }
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative; }

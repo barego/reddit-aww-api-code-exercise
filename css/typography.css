@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:700|Pacifico|Changa+One);
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+.main-header {
+  text-align: center;
+  margin-bottom: 1em; }
+  .main-header .line-1 {
+    font-family: Pacifico;
+    position: relative;
+    display: block; }
+    .main-header .line-1:before, .main-header .line-1:after {
+      content: "\f005";
+      font-family: FontAwesome;
+      position: relative;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      font-size: 16px;
+      margin: -0 30px;
+      top: -5px; }
+  .main-header .line-2 {
+    display: block;
+    font-family: 'Changa One', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 90px;
+    letter-spacing: 15px;
+    margin: 0 0; }
+  .main-header .line-3 {
+    display: block;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin: 20px 0 0;
+    position: relative;
+    letter-spacing: 6px; }
+    .main-header .line-3:before, .main-header .line-3:after {
+      content: " ";
+      position: absolute;
+      width: 50px;
+      height: 5px;
+      border-top: 1px solid #222222;
+      border-bottom: 1px solid #222222; }
+    .main-header .line-3:before {
+      margin: 7px 0 0 -60px; }
+    .main-header .line-3:after {
+      margin: 7px 0 0 5px; }
+  .main-header .line-4 {
+    display: block;
+    width: 100%;
+    position: relative;
+    font-size: 18px;
+    margin: 50px 0 0; }
+  .main-header .line-5 {
+    display: block;
+    margin: 20px 0 50px;
+    position: relative;
+    text-align: center;
+    margin: 50px auto;
+    display: block;
+    font-size: 20px; }
+    .main-header .line-5 a {
+      text-decoration: none;
+      display: inline-block;
+      text-align: left;
+      color: #222; }
+    .main-header .line-5:nth-child(1) {
+      text-align: right; }
+      .main-header .line-5:nth-child(1):after {
+        content: "\f005 ";
+        font-family: FontAwesome;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: inherit;
+        position: relative;
+        font-size: 30px;
+        text-align: center;
+        width: 90%;
+        top: 4px;
+        margin: 0;
+        padding: 0 20px; }
+  .main-header .line-6 {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    letter-spacing: 5px; }
+    .main-header .line-6:before, .main-header .line-6:after {
+      content: "\f068";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      position: relative;
+      font-size: 16px;
+      margin: 0 10px;
+      top: 2px; }
